@@ -1,0 +1,85 @@
+[
+  {
+    "id": "DISRUPT-FL-01",
+    "type": "FLIGHT_CANCELLED",
+    "target_type": "FLIGHT",
+    "reference_id": "FL-GOA-101",
+    "airline": "IndiGo",
+    "flight_number": "6E-2041",
+    "route": "DEL -> GOI",
+    "reason": "Air traffic control operational constraints and technical check",
+    "severity": "CRITICAL",
+    "status": "DETECTED",
+    "original_departure": "2026-12-10T08:30:00",
+    "detected_at": "2026-11-17T11:00:00Z",
+    "impact_summary": "Flight cancelled by airline. Automatic compensation or free rebooking available.",
+    "alternatives": [
+      {
+        "alternative_id": "ALT-FL-01",
+        "provider": "MockAirlines",
+        "airline": "IndiGo",
+        "flight_number": "6E-2045",
+        "departure_time": "2026-12-10T12:15:00",
+        "arrival_time": "2026-12-10T15:00:00",
+        "price_difference": 0.0,
+        "refund_amount": 0.0,
+        "additional_fee": 0.0,
+        "currency": "INR",
+        "description": "Same airline afternoon flight (6E-2045). No additional charge."
+      },
+      {
+        "alternative_id": "ALT-FL-02",
+        "provider": "MockAirlines",
+        "airline": "Air India",
+        "flight_number": "AI-883",
+        "departure_time": "2026-12-10T14:00:00",
+        "arrival_time": "2026-12-10T16:45:00",
+        "price_difference": 700.0,
+        "refund_amount": 0.0,
+        "additional_fee": 700.0,
+        "currency": "INR",
+        "description": "Air India afternoon flight (AI-883). Includes full meal. Fare difference: ₹700."
+      },
+      {
+        "alternative_id": "ALT-FL-REFUND",
+        "provider": "MockAirlines",
+        "refund_amount": 13500.0,
+        "additional_fee": 0.0,
+        "currency": "INR",
+        "description": "Full cash refund of ₹13,500 back to original payment method."
+      }
+    ]
+  },
+  {
+    "id": "DISRUPT-HT-01",
+    "type": "HOTEL_UNAVAILABLE",
+    "target_type": "HOTEL",
+    "reference_id": "HT-GOA-BALANCED",
+    "hotel_name": "Candolim Beach Resort & Spa",
+    "reason": "Emergency pipe maintenance affecting booked wing",
+    "severity": "HIGH",
+    "status": "DETECTED",
+    "detected_at": "2026-11-17T11:00:00Z",
+    "impact_summary": "Property cannot accommodate dates without room type reassignment.",
+    "alternatives": [
+      {
+        "alternative_id": "ALT-HT-01",
+        "provider": "MockHotels",
+        "hotel_name": "Candolim Beach Resort & Spa (Upgraded Suite)",
+        "price_difference": 0.0,
+        "additional_fee": 0.0,
+        "currency": "INR",
+        "description": "Complimentary upgrade to Executive Suite in West Wing at no extra cost."
+      },
+      {
+        "alternative_id": "ALT-HT-02",
+        "provider": "MockHotels",
+        "hotel_name": "Taj Fort Aguada Resort & Spa",
+        "price_difference": 22000.0,
+        "additional_fee": 22000.0,
+        "currency": "INR",
+        "description": "Relocation to partner 5-star resort with discounted differential rate."
+      }
+    ]
+  }
+]

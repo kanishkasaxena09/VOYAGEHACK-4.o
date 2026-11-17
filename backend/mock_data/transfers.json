@@ -1,0 +1,53 @@
+[
+  {
+    "id": "TR-GOA-1",
+    "provider": "MockTransfers",
+    "city": "Goa",
+    "vehicle_type": "Sedan (Toyota Etios/Dzire)",
+    "category": "Private Airport Transfer",
+    "route": "Goa Airport (GOI/GOX) to North Goa Hotel (Return Trip)",
+    "capacity_passengers": 4,
+    "capacity_luggage": 3,
+    "price": 3800.0,
+    "currency": "INR",
+    "rating": 4.7,
+    "available": true,
+    "cancellation_policy": "Free cancellation up to 6 hours prior.",
+    "penalty_fee": 500.0,
+    "checked_at": "2026-11-17T10:00:00Z"
+  },
+  {
+    "id": "TR-GOA-2",
+    "provider": "MockTransfers",
+    "city": "Goa",
+    "vehicle_type": "SUV (Innova Crysta)",
+    "category": "Premium Airport Transfer",
+    "route": "Goa Airport to North Goa Hotel (Return Trip)",
+    "capacity_passengers": 6,
+    "capacity_luggage": 5,
+    "price": 5500.0,
+    "currency": "INR",
+    "rating": 4.9,
+    "available": true,
+    "cancellation_policy": "Free cancellation up to 6 hours prior.",
+    "penalty_fee": 800.0,
+    "checked_at": "2026-11-17T10:00:00Z"
+  },
+  {
+    "id": "TR-KER-1",
+    "provider": "MockTransfers",
+    "city": "Kochi",
+    "vehicle_type": "Sedan (Etios)",
+    "category": "Private Airport Transfer",
+    "route": "Cochin International Airport to Kumarakom Hotel (Return)",
+    "capacity_passengers": 4,
+    "capacity_luggage": 3,
+    "price": 4200.0,
+    "currency": "INR",
+    "rating": 4.8,
+    "available": true,
+    "cancellation_policy": "Free cancellation up to 12 hours prior.",
+    "penalty_fee": 500.0,
+    "checked_at": "2026-11-17T10:00:00Z"
+  }
+]
